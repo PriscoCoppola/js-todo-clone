@@ -8,9 +8,55 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <!-- Icon -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous'/>
 </head>
 <body>
+
+    <div class="todos">
+        <!-- Header -->
+        <header>
+            <h1>ToDo List</h1>
+        </header>
+        
+        <!-- Main -->
+        <main>
+
+            <!-- ToDo List -->
+            <input
+                type="text"
+                class="input"
+                placeholder="Inserisci una ToDo"
+            >
+            <ul class="todo-list">
+                <li>
+                    <div class="text">test test test</div>
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-minus-circle"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="text">test test test</div>
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-minus-circle"></i>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Layout -->
+            <li style="display: none">
+                <div class="text"></div>
+                <div class="icon">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-minus-circle"></i>
+                </div>
+            </li>
+        </main>
+    </div>
     
     <!-- Javascript -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script>
